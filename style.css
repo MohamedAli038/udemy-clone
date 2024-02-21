@@ -246,3 +246,13 @@ body{
         display: none;
     }
 }
+
+@media  screen and (max-width:400px) {
+    .categories{
+        font-size: 8px;
+        gap:5px;
+        }
+
+   
+    
+}
