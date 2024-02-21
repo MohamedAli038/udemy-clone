@@ -53,6 +53,10 @@ body{
     align-items: center;
 }
 
+.navbar__s4{
+    display: none;
+}
+
 /*My Learning Popup*/
 .mylearning{
     position: relative;
@@ -114,8 +118,8 @@ body{
     width:35%;
     padding: 2%;
     position: absolute;
-    top:100px;
-    left:100px;
+    top:10%;
+    left:10%;
     animation-name: zoom;
     animation-duration: 2s;
     opacity: 0;
@@ -150,7 +154,9 @@ body{
 }
 
 .course-card{
-    width:300px;
+    flex-grow:1;
+    flex-basis: 20%;
+    margin: 5px;
     }
 
 .course-card img{
@@ -210,4 +216,33 @@ body{
     align-items: center;
     display: flex;
     justify-content: space-between;
+}
+
+
+@media  screen and (max-width:800px) {
+    body{
+        font-size: 10px;
+    }
+    
+}
+
+@media  screen and (max-width:800px) {
+    body{
+        font-size: 10px;
+    }
+    
+}
+
+@media  screen and (max-width:600px) {
+    .course-card{
+        flex-basis: 40%;
+    }
+
+    .navbar__s4{
+        display: block;
+    }
+    
+    .navbar__s3{
+        display: none;
+    }
 }
